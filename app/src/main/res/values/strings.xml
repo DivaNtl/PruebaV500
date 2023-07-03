@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PruebaV500</string>
+    <string name="tarjeta_credito">Tarjeta de Credito</string>
+    <string name="hint_numero">Número</string>
+    <string name="hint_nombre">Titular</string>
+    <string name="hint_expira">Fecha Expiración</string>
+    <string name="txtTipo">Tipo Tarjeta</string>
+    <string name="rbGold">Gold</string>
+    <string name="rbPlatinum">Platinum</string>
+    <string name="rbSignature">Signature</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="btn_grabar">Guardar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_atras">Anterior</string>
+    <string name="btn_siguiente">Siguiente</string>
+</resources>
