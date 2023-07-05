@@ -6,11 +6,12 @@ import java.util.Date;
 public class Tarjeta implements Serializable {
     private Integer numero;
     private String titular;
-    private Integer expira;
+    private Date expira;
     private String tipo;
+    private String error;
 
 
-    public Tarjeta(Integer numero, String titular, Integer expira, String tipo) {
+    public Tarjeta(Integer numero, String titular, Date expira, String tipo) {
         this.numero = numero;
         this.titular = titular.toUpperCase(); // Nombre siempre en mayúsculas
         this.expira = expira;
@@ -18,6 +19,9 @@ public class Tarjeta implements Serializable {
     }
 
     public Tarjeta() {
+    }
+
+    public Tarjeta(int numeroTarjeta, String titular, int expira, String tipo) {
     }
 
     // Getters
@@ -29,7 +33,7 @@ public class Tarjeta implements Serializable {
         return titular;
     }
 
-    public Integer getExpira() {
+    public Date getExpira() {
         return expira;
     }
 
@@ -46,11 +50,13 @@ public class Tarjeta implements Serializable {
         this.titular = titular.toUpperCase();
     }
 
-    public void setExpira(Integer expira) {
+    public void setExpira(Date expira) {
         this.expira = expira;
     }
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+    
+
 }
